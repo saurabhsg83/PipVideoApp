@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.pipvideoapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+        android:resizeableActivity="true"
+        android:supportsPictureInPicture="true"
+        android:windowSoftInputMode="adjustResize">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+
+</manifest>
+
+
+<!-- package com.pipvideoapp;
+ 
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+import android.widget.Toast;
+
+public class ToastModule extends ReactContextBaseJavaModule {
+  
+  public ToastModule(ReactApplicationContext reactContext) {
+    super(reactContext);
+  }
+ 
+  @Override
+  public String getName() {
+    return "ToastModule";
+  }
+ 
+  @ReactMethod
+  public void show(string message) {
+    Toast.makeText(getReactApplicationContext(), message, Toast.LENGTH_LONG).show();
+  }
+} -->
+
+
+
+
+<!-- package com.pipvideoapp;
+ 
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+import android.widget.Toast;
+
+public class ToastModule extends ReactContextBaseJavaModule {
+  
+  public ToastModule(ReactApplicationContext reactContext) {
+    super(reactContext);
+  }
+ 
+  @Override
+  public String getName() {
+    return "ToastModule";
+  }
+ 
+  @ReactMethod
+  public void show(string message) {
+    Toast.makeText(getReactApplicationContext(), message, Toast.LENGTH_LONG).show();
+  }
+} -->
